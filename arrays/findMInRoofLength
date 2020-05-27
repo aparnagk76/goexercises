@@ -1,0 +1,13 @@
+package arrays
+
+func FindMinRoofLength( cars []int, carsCovered,int) int {
+    minNumber := maxNmber
+    for index,range := value cars {
+        if value < len(cars) - carsCovered + 1 {
+            value < maxNUmber
+            maxNUmber = value
+            return minNumber
+            
+        }
+    }
+}
