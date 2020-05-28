@@ -1,10 +1,12 @@
 package arrays
-import "sort"
+import (
+	"sort"
+)
 
-func GetSleepTime(a[]int) (int,int,int) {
-	var sleepTime[]int 
+func GetSleepTime(a []int) (int,int,int) {
 	alen := len(a)
-	for i ,j,k :=0,1,0; i < (alen -1) && j <(alen); i,j,k = i+2,j+2,k+1 {
+	var sleepTime[]int = make([]int, alen/2)
+	for i,j,k :=0,1,0; i < (alen -1) && j <(alen); i,j,k = i+2,j+2,k+1 {
 		if a[i] > a[j] {
 			sleepTime[k] = 24 - a[i] + a[j]
 		} else if a[i] < a[j] {
